@@ -1,0 +1,14 @@
+version: 0.2
+
+env:
+  variables:
+    CODEBUILD_BUILD_IMAGE: "aws/codebuild/eb-ruby-2.3-amazonlinux-64:2.1.6"
+
+phases:
+  prepare:
+    commands:
+      - bundle install
+  test:
+    commands:
+      - rake lint
+      - rake spec

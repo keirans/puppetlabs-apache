@@ -1,9 +1,9 @@
 node {
-        stage("Deploy   Azure   Template ") { }
-        stage("Provision   Azure   Services") { }
-        stage("Provision   Azure   VMs") { }
-        stage("Bootstrap   Puppet   Agent") { }
-        stage("Sign   Puppet   CSRs") { }
-        stage("Apply   Puppet   Catalogue") { }
+        stage("Deploy   Azure   Template ") { sh "echo"}
+        stage("Provision   Azure   Services") { sh "echo"}
+        stage("Provision   Azure   VMs") {sh "echo" }
+        stage("Bootstrap   Puppet   Agent") { sh "echo"}
+        stage("Sign   Puppet   CSRs") { sh "echo"}
+        stage("Apply   Puppet   Catalogue") { sh "echo"}
         stage("Deployment Completed") { sh "echo"}
 }

@@ -5,5 +5,5 @@ node {
         stage("Bootstrap Puppet Agent") { }
         stage("Sign Puppet CSRs") { }
         stage("Apply Puppet Catalogue") { }
-        stage("Deployment Completed") { }
+        stage("Deployment Completed") { sh "echo"}
 }
